@@ -1,0 +1,214 @@
+/* Meyer reset added via CDN. */
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Your code starts here! */
+
+@media only screen and (max-width: 400px){ /* Mobile screens */
+
+body {
+  height: 100%;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 36px;
+  background: url(../img/logo.png) no-repeat center;
+  background-color: #bde0ff;
+  background-size: contain;
+}
+.logo:active {
+  background: url(../img/logo-hover.png) no-repeat center;
+}
+.nav-bar {
+  background-color: #bde0ff;
+}
+nav {
+  padding-top: 56px;
+  width: 100%;
+}
+.nav-bar a {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: gray;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-top: 1.5vh;
+  height: 6vh;
+}
+nav a:first-child, nav a:nth-child(2) {
+  border-top: 1px solid black;
+}
+nav a:nth-child(odd){
+  border-right: 1px solid black;
+}
+nav a:last-child, nav a:nth-child(5){
+  border-bottom: 4px solid black;
+}
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px){ /* Tablet screens */
+
+header {
+  height: 45%;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 36px;
+  background: url(../img/logo.png) no-repeat center;
+  background-size: contain;
+  background-color: #bde0ff;
+}
+.logo:active {
+  background: url(../img/logo-hover.png) no-repeat center;
+}
+nav {
+  padding-top: 56px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
+  background-color: #bde0ff;
+}
+nav a {
+  display: inline-block;
+  width: 16.66%;
+  width: calc(100%/6);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: gray;
+  text-decoration: none;
+}
+
+}
+
+@media only screen and (min-width: 961px){ /* Desktop screens */
+
+header {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 1.2em;
+}
+.nav-bar {
+  z-index: 1;
+  background-color: #bde0ff;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 7%;
+  width: 100%;
+  border-bottom: 4px solid black;
+}
+.nav-bar nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 50%;
+}
+.nav-bar a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: gray;
+  text-decoration: none;
+}
+.logo {
+  width: 183px;
+  height: 36px;
+  background: url(../img/logo.png);
+}
+.logo:hover {
+  background: url(../img/logo-hover.png);
+}
+.services-header-img {
+  width: 80%;
+  padding-top: 8vh;
+}
+.services {
+  margin-top: 10px;
+  width: 80%;
+}
+.services h2 {
+  font-size: 1.5em;
+}
+hr {
+  width: 80%;
+  margin: 30px auto;
+}
+.general-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.general-info section {
+  width: 38%;
+  padding: 20px;
+  border: 1px solid gray;
+  background-color: aliceblue;
+  margin-bottom: 3%;
+}
+.general-info section:nth-child(odd){
+  margin-right: 4%;
+}
+.general-info a {
+  display: inline-block;
+  background-color: transparent;
+  margin-top: 10px;
+  padding: 5px;
+  color: gray;
+  border: 1px solid gray;
+  text-decoration: none;
+}
+footer {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+footer div {
+  width: 50%;
+  padding: 10px;
+}
+footer div p {
+  margin-bottom: 10px;
+}
+footer div ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+footer div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.copyright {
+  text-align: center;
+}
+}
