@@ -1,0 +1,217 @@
+/* Meyer reset added via CDN. */
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 400px){ /* Mobile screens */
+
+    body {
+      height: 100%;
+    }
+    .logo {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      height: 36px;
+      background: url(../img/logo.png) no-repeat center;
+      background-color: #bde0ff;
+      background-size: contain;
+    }
+    .logo:active {
+      background: url(../img/logo-hover.png) no-repeat center;
+    }
+    .nav-bar {
+      background-color: #bde0ff;
+      width: 100%;
+    }
+    nav {
+      display: flex;
+      flex-flow: row wrap;
+      padding-top: 56px;
+      width: 100%;
+    }
+    .nav-bar nav a {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      color: gray;
+      text-decoration: none;
+      width: 50%;
+      text-align: center;
+      border-bottom: 1px solid black;
+      padding-top: 1.5vh;
+      height: 6vh;
+    }
+    nav a:first-child, nav a:nth-child(2) {
+      border-top: 1px solid black;
+    }
+    nav a:nth-child(odd){
+      border-right: 1px solid black;
+    }
+    nav a:last-child, nav a:nth-child(5){
+      border-bottom: 4px solid black;
+    }
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px){ /* Tablet screens */
+    .logo {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      height: 36px;
+      background: url(../img/logo.png) no-repeat center;
+      background-size: contain;
+      background-color: #bde0ff;
+    }
+    .logo:active {
+      background: url(../img/logo-hover.png) no-repeat center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 56px;
+      padding-bottom: 10px;
+      border-bottom: 4px solid black;
+      background-color: #bde0ff;
+    }
+    nav a {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      color: gray;
+      text-decoration: none;
+    }
+
+}
+
+@media only screen and (min-width: 961px){ /* Desktop screens */
+    .nav-bar {
+      z-index: 1;
+      background-color: #bde0ff;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      top: 0;
+      left: 0;
+      height: 7%;
+      width: 100%;
+      border-bottom: 4px solid black;
+    }
+    .nav-bar nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 75%;
+      height: 50%;
+    }
+    .nav-bar a {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      color: gray;
+      text-decoration: none;
+    }
+    .logo {
+      width: 183px;
+      height: 36px;
+      background: url(../img/logo.png);
+    }
+    .logo:hover {
+      background: url(../img/logo-hover.png);
+    }
+    .intro {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 7vh;
+        height: 60%;
+        width: 80%;
+    }
+    .overview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 45%;
+        width: 30%;
+        top: 12.5%;
+        font-size: 1.5em;
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        height: 75%;
+        width: 60%;
+        align-self: center;
+        border-left: 1px solid black;
+    }
+    .main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        height: 100%;
+        width: 50%;
+    }
+    .main p {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .main ul {
+        list-style-type: square;
+        list-style-position: inside;
+    }
+    .main img {
+        height: 100%;
+    }
+    .details {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-top: 25px;
+        width: 80%;
+        border: 1px solid black;
+    }
+    .details div {
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 28%;
+        margin-bottom: 25px;
+    }
+    footer {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-bottom: 3em;
+        width: 80%;
+    }
+    footer div {
+        width: 45%;
+        padding: 15px;
+        border-right: 1px solid black;
+    }
+    .copyright {
+        position: absolute;
+        bottom: 0;
+    }
+}
