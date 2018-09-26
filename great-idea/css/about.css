@@ -304,7 +304,6 @@ h1, h2, h3, h4, h5 {
         margin: 0 auto;
         padding-top: 25px;
         width: 80%;
-        border: 1px solid black;
     }
     .details div {
         background-color: aliceblue;
